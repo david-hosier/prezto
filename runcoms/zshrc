@@ -20,7 +20,7 @@ export MAVEN_OPTS="-Xmx1G -XX:MaxPermSize=256m"
 . ~/.alias
 . resty
 
-export PATH="$VERTX_HOME/bin:$JAVA_HOME/bin:$PATH"
+export PATH="$VERTX_HOME/bin:$JAVA_HOME/bin:~/bin:$PATH"
 
 
 export NVM_DIR="/Users/david/.nvm"
