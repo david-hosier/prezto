@@ -9,3 +9,7 @@
 if [[ "$SHLVL" -eq 1 && ! -o LOGIN && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprofile"
 fi
+
+export CQ_INSTALL_LOCAL_AAU="/Users/david/work/aau"
+export CQ_INSTALL_LOCAL_RP="/Users/david/work/cq/cq5-rp"
+export CQ_INSTALL_LOCAL_6D="/Users/david/work/cq/cq5-6d"
