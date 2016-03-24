@@ -12,19 +12,15 @@ fi
 
 # Customize to your needs...
 #
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_06.jdk/Contents/Home"
-export VERTX_HOME="/Users/david/dev/vertx"
 export AAU_WORKSPACE="/Users/david/dev/eclipse-workspaces/aau"
 export MAVEN_OPTS="-Xmx1G -XX:MaxPermSize=256m"
 
 . ~/.alias
-. resty
-
-export PATH="$VERTX_HOME/bin:$JAVA_HOME/bin:$PATH:/Users/david/bin"
-
 
 export NVM_DIR="/Users/david/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+alias updatenvm='cd "$NVM_DIR" && git pull origin master && git checkout `git describe --abbrev=0 --tags`; source $NVM_DIR/nvm.sh; echo Update complete'
 
-#THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
-[[ -s "/Users/david/.gvm/bin/gvm-init.sh" ]] && source "/Users/david/.gvm/bin/gvm-init.sh"
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/david/.sdkman"
+[[ -s "/Users/david/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/david/.sdkman/bin/sdkman-init.sh"
