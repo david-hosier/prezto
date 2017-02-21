@@ -12,8 +12,15 @@ fi
 
 # Customize to your needs...
 #
-export AAU_WORKSPACE="/Users/david/dev/eclipse-workspaces/aau"
+#export AAU_WORKSPACE="/Users/david/dev/eclipse-workspaces/aau-new"
+export AAU_WORKSPACE="/Users/david/work/eclipse-workspaces/lms"
 export MAVEN_OPTS="-Xmx1G -XX:MaxPermSize=256m"
+
+export PATH="$HOME/bin:$PATH"
+#export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+#export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
+export EDITOR=vim
+export VIM_APP_DIR="/usr/local/Cellar/macvim/7.4-104"
 
 . ~/.alias
 

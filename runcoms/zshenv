@@ -13,3 +13,6 @@ fi
 export CQ_INSTALL_LOCAL_AAU="/Users/david/work/aau"
 export CQ_INSTALL_LOCAL_RP="/Users/david/work/cq/cq5-rp"
 export CQ_INSTALL_LOCAL_6D="/Users/david/work/cq/cq5-6d"
+
+fpath=(~/.zsh-functions $fpath)
+autoload lmslogin reloaddeployment
